@@ -3,11 +3,9 @@
 
 int main() {
 
-    game::blob::Card c("diamonds", 10);
+    game::blob::Card c("diamonds", 0);
 
-    std::cout << "suit" << c.get_suit().str_suit << "rank" << c.get_rank().get_rank_as_string()
-     << "value of rank" << c.get_rank().get_value();
-
+c.print();
     
     return 0;
 }

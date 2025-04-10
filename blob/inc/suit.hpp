@@ -19,6 +19,7 @@ namespace game {
                 Suit(const std::string&);
                 int int_val;
                 std::string str_suit;
+                Suit(int);
             private:
                 E_Suit suit;
         };

@@ -57,7 +57,7 @@ std::string game::blob::Rank::get_rank_as_string() {
 int game::blob::Rank::get_value() {
     int val = (int)this->rank;
     if(val == 0)
-        val == 10;
+        val = 10;
         
     return val;    
 }
