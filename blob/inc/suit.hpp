@@ -6,13 +6,21 @@
 
 namespace game {
     namespace blob {
-        static const std::vector<std::string> card_values = {"hearts", "diamonds", "clubes", "spades"};
 
-        enum Suit {
+        enum E_Suit {
             HEARTS,
             DIAMONDS,
             CLUBS,
             SPADES
+        };
+
+        class Suit {
+            public:
+                Suit(const std::string&);
+                int int_val;
+            private:
+                E_Suit suit;
+                std::string str_suit;
         };
     }
 }

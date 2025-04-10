@@ -6,9 +6,12 @@
 
 namespace game {
     namespace blob {
-        struct Card {
+        class Card {
+            private: 
             game::blob::Rank rank;
             game::blob::Suit suit;
+            public:
+            Card(const std::string& suit, int rank);
         };
     }
 }

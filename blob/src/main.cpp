@@ -3,8 +3,9 @@
 
 int main() {
 
-    game::blob::Card c;
-    c.rank = (game::blob::Rank)10;
+    game::blob::Card c("diamonds", 10);
+
+    std::cout << "suit";
     
     return 0;
 }
