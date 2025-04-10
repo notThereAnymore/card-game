@@ -12,6 +12,8 @@ namespace game {
             game::blob::Suit suit;
             public:
             Card(const std::string& suit, int rank);
+            game::blob::Rank get_rank();
+            game::blob::Suit get_suit();
         };
     }
 }

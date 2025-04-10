@@ -18,9 +18,9 @@ namespace game {
             public:
                 Suit(const std::string&);
                 int int_val;
+                std::string str_suit;
             private:
                 E_Suit suit;
-                std::string str_suit;
         };
     }
 }

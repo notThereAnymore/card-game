@@ -1,5 +1,8 @@
-CFLAGS ?= -Iblob/inc -g
+CFLAGS := -g
+BLOBFLAGS := -Iblob/inc
+DEFFLAGS := -Idefinitions
+
 SRC := $(wildcard blob/src/*.cpp)
 
 main:$(SRC)
-	g++ $(CFLAGS) $(SRC) -o t.GU
+	g++ $(CFLAGS) $(DEFFLAGS) $(BLOBFLAGS) $(SRC) -o t.GU
